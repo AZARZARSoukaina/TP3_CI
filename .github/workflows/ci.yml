@@ -116,6 +116,9 @@ jobs:
           pip install robotframework-requests
           pip install robotframework-browser
       - name: Analysing the code with robotframework
+        env: 
+          URL: 127.0.0.1
+          PORT: 5000
         run: |
           cd ${{ vars.ROBOT_FILE_WAY }}
           robot ${{ vars.ROBOT_FILE_NAME }}
