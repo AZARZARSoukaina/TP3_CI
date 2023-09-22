@@ -10,7 +10,7 @@ on:
 
 jobs:
   repot-clone:
-  run:
+  run: |
     git clone https://github.com/vanessakovalsky/python-api-handle-it.git
     cd python-api-handle-it #à tester.
   pylint-test:
