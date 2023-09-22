@@ -22,7 +22,8 @@ jobs:
       - name: Install dependencies
         run: |
           git clone https://github.com/vanessakovalsky/python-api-handle-it.git
-          cd python-api-handle-it #à tester.
+          cd python-api-handle-it 
+          
   pylint-test:
     runs-on: ${{ vars.IMAGE_OS }}
     strategy:
@@ -41,6 +42,8 @@ jobs:
           pip install pylint-json2html
       - name: Analysing the code with pylint
         run: |
+          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
+          cd python-api-handle-it 
           cd app
           mkdir reports
           cd reports
@@ -73,6 +76,8 @@ jobs:
           pip install html-testRunner
       - name: Analysing the code with unittest
         run: |
+          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
+          cd python-api-handle-it 
           cd app
           python -m unittest ${{ vars.UNITTEST_FILE}}
       - name: Archive report
@@ -81,12 +86,12 @@ jobs:
           name: unittest results
           path: |
             app/reports/unittest/
+ 
   robot-test:
     runs-on: ${{ vars.IMAGE_OS }}
     strategy:
       matrix:
         python-version: ["3.8", "3.9", "3.10"]
-
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
@@ -100,6 +105,8 @@ jobs:
 
       - name: start flask app
         run: |
+          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
+          cd python-api-handle-it 
           cd app
           flask --app=./main.py run --host=0.0.0.0 &
           sleep 5
@@ -111,6 +118,8 @@ jobs:
           pip install robotframework-browser
       - name: Analysing the code with robotframework
         run: |
+          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
+          cd python-api-handle-it 
           cd ${{ vars.ROBOT_FILE_WAY }}
           robot ${{ vars.ROBOT_FILE_NAME }}
       - name: Archive log report and output
@@ -139,6 +148,8 @@ jobs:
           pip install json2tree
       - name: Analysing the code with radon
         run: |
+          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
+          cd python-api-handle-it 
           pwd
           cd ./app
           mkdir reports
@@ -171,6 +182,8 @@ jobs:
           pip install json2tree
       - name: Analysing the code with radon
         run: |
+          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
+          cd python-api-handle-it 
           pwd
           cd ./app
           mkdir reports
