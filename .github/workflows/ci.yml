@@ -7,9 +7,6 @@ on:
   pull_request:
     branches:
       - main
-env:
-  IMAGE_OS: python
-
 jobs:
   repot-clone:
     runs-on: ${{ vars.IMAGE_OS }}
@@ -190,7 +187,7 @@ jobs:
 
   build-push-image:
     needs:
-      [pylint-test, unittest-test, robot-test, radon-raw-test, radon-cc-test]
+      [pylint-test, unittest-test, robot-test, radon-raw-test, radon-cc-test] 
     runs-on: ${{ vars.IMAGE_OS }}
 
     steps:
