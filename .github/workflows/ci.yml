@@ -12,10 +12,10 @@ IMAGE_OS: python
 
 jobs:
   repot-clone:
-        runs-on: ${{ vars.IMAGE_OS }}
-        run: |
-    git clone https://github.com/vanessakovalsky/python-api-handle-it.git
-    cd python-api-handle-it #à tester.
+    runs-on: ${{ vars.IMAGE_OS }}
+    run: |
+      git clone https://github.com/vanessakovalsky/python-api-handle-it.git
+      cd python-api-handle-it #à tester.
   pylint-test:
     runs-on: ${{ vars.IMAGE_OS }}
     strategy:
