@@ -13,9 +13,19 @@ IMAGE_OS: python
 jobs:
   repot-clone:
     runs-on: ${{ vars.IMAGE_OS }}
-    run: |
-      git clone https://github.com/vanessakovalsky/python-api-handle-it.git
-      cd python-api-handle-it #à tester.
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10"]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
+          cd python-api-handle-it #à tester.
   pylint-test:
     runs-on: ${{ vars.IMAGE_OS }}
     strategy:
