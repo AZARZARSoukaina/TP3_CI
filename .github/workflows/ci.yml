@@ -41,8 +41,6 @@ jobs:
           pip install pylint-json2html
       - name: Analysing the code with pylint
         run: |
-          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
-          cd python-api-handle-it 
           cd app
           mkdir reports
           cd reports
@@ -75,8 +73,6 @@ jobs:
           pip install html-testRunner
       - name: Analysing the code with unittest
         run: |
-          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
-          cd python-api-handle-it 
           cd app
           python -m unittest ${{ vars.UNITTEST_FILE}}
       - name: Archive report
@@ -104,8 +100,6 @@ jobs:
 
       - name: start flask app
         run: |
-          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
-          cd python-api-handle-it 
           cd app
           flask --app=./main.py run --host=0.0.0.0 &
           sleep 5
@@ -148,8 +142,6 @@ jobs:
           pip install json2tree
       - name: Analysing the code with radon
         run: |
-          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
-          cd python-api-handle-it 
           pwd
           cd ./app
           mkdir reports
@@ -182,8 +174,6 @@ jobs:
           pip install json2tree
       - name: Analysing the code with radon
         run: |
-          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
-          cd python-api-handle-it 
           pwd
           cd ./app
           mkdir reports
@@ -210,8 +200,6 @@ jobs:
           docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker image
         run: |
-          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
-          cd python-api-handle-it 
           docker build . --file ${{ vars.IMAGE_FILE }} --tag ${{ secrets.DOCKER_USER }}/${{ vars.DOCKER_REPO}}:${{ vars.DOCKER_IMAGE_VERSION }}
       - name: Push docker image
         run: |
