@@ -119,7 +119,6 @@ jobs:
       - name: Analysing the code with robotframework
         run: |
           git clone https://github.com/vanessakovalsky/python-api-handle-it.git
-          cd python-api-handle-it 
           cd ${{ vars.ROBOT_FILE_WAY }}
           robot ${{ vars.ROBOT_FILE_NAME }}
       - name: Archive log report and output
@@ -210,6 +209,8 @@ jobs:
           docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker image
         run: |
+          git clone https://github.com/vanessakovalsky/python-api-handle-it.git
+          cd python-api-handle-it 
           docker build . --file ${{ vars.IMAGE_FILE }} --tag ${{ secrets.DOCKER_USER }}/${{ vars.DOCKER_REPO}}:${{ vars.DOCKER_IMAGE_VERSION }}
       - name: Push docker image
         run: |
