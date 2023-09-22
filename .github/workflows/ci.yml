@@ -7,10 +7,13 @@ on:
   pull_request:
     branches:
       - main
+env:
+IMAGE_OS: python
 
 jobs:
   repot-clone:
-  run: |
+        runs-on: ${{ vars.IMAGE_OS }}
+        run: |
     git clone https://github.com/vanessakovalsky/python-api-handle-it.git
     cd python-api-handle-it #à tester.
   pylint-test:
