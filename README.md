@@ -1,7 +1,5 @@
 # TP3_CI
-Cet exercice permettra de valider vos compétences pour votre dossier d’évaluation de compétences 
-individuelle dans le cadre de votre titre RNCP Administrateur Devops. Il concerne la validation de 
-l’activité type 2 Déployer en continu une application
+Cet exercice permettra de valider vos compétences pour l'activité type 2 Déplouyer en continu une applicaton dans le cadre du titre RNCP Administrateur Devops.
 
 ### Description des fichiers 
 
