@@ -7,7 +7,7 @@ Nous disposons ici:
 
 * d'un dossier **app** dans lequel on retrouve l'ensemble des programmes de l'application Python à tester. 
 
-* d'un dossier **docker-app/python** dans lequel on retouve le dockerfile nécessaire à la construction d'une image afin de pouvoir déployer l'application dans un conteneur. 
+* d'un dossier **docker-app/python** dans lequel on retrouve le dockerfile nécessaire à la construction d'une image afin de pouvoir déployer l'application dans un conteneur. 
 
 * d'un dossier **.github/workflows** contenant le fichier de pipeline au format yml. Ce fichier de pipeline contient une succession d'étapes automatisées de traitement de données permettant de tester l'application python.
 
@@ -17,6 +17,20 @@ Nous disposons ici:
 -> Disposer d'un compte sur le Hub Docker  
 
 ### Schéma de présentation des étapes du pipeline 
+Le pipeline de ce TP permet de lancer une suite de tests de manières automatisées, dans l'ordre:  
+1. repot-clone
+2. pylint-test  
+3. unittest-test  
+4. robot-test  
+5. radon-raw-test  
+6. radon-cc-test
+
+Lors de l'exécution des jobs de chaque actions une visualisation succinte et détaillé est disponible dans Github Actions.  
+
+Lorsque les tests sont validés, l'image docker est construite et pousser sur le docker hub.  
+
+
+
 
 ### Configuration des paramètres du pipeline
 
