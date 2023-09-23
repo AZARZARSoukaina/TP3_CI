@@ -14,7 +14,7 @@ Nous disposons ici:
 ### Pré requis 
 -> Disposer de Git  
 -> Disposer d'un compte sur un outil d'orchestration continue tel que Jenkins, Gitlab CI, Github Actions...)   
-   Dans le cadre de cet exercice j'ai utlisé Github Actions   
+   - Dans le cadre de cet exercice j'ai utlisé Github Actions   
 -> Disposer d'un compte sur le Hub Docker  
 
 ### Schéma de présentation des étapes du pipeline 
