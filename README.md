@@ -12,10 +12,10 @@ Nous disposons ici:
 * d'un dossier **.github/workflows** contenant le fichier de pipeline au format yml. Ce fichier de pipeline contient une succession d'étapes automatisées de traitement de données permettant de tester l'application python. Cf Schéma de présentation des étapes du pipeline. 
 
 ### Pré requis 
--> Disposer de Git
--> Disposer d'un compte sur un outil d'orchestration continue tel que Jenkins, Gitlab CI, Github Actions...) 
-   Dans le cadre de cet exercice j'ai utlisé Github Actions. 
--> Disposer d'un compte sur le Hub Docker
+-> Disposer de Git  
+-> Disposer d'un compte sur un outil d'orchestration continue tel que Jenkins, Gitlab CI, Github Actions...)   
+   Dans le cadre de cet exercice j'ai utlisé Github Actions   
+-> Disposer d'un compte sur le Hub Docker  
 
 ### Schéma de présentation des étapes du pipeline 
 
