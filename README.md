@@ -17,7 +17,7 @@ Nous disposons ici:
 -> Disposer d'un compte sur le Hub Docker  
 
 ### Schéma de présentation des étapes du pipeline 
-Le pipeline de ce TP permet de lancer une suite de tests de manières automatisées, dans l'ordre:  
+Le pipeline de ce TP permet de lancer une suite de tâches de manières automatisées, dans l'ordre:  
 1. repot-clone: *récupération du code source dans un dépôt git*
 2. pylint-test: *vérification des normes de codage*  
 3. unittest-test: *test des modules individuels*  
