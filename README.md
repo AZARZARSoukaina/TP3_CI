@@ -18,16 +18,18 @@ Nous disposons ici:
 
 ### Schéma de présentation des étapes du pipeline 
 Le pipeline de ce TP permet de lancer une suite de tests de manières automatisées, dans l'ordre:  
-1. repot-clone
-2. pylint-test  
-3. unittest-test  
-4. robot-test  
-5. radon-raw-test  
-6. radon-cc-test
+1. repot-clone: *récupération du code source dans un dépôt git*
+2. pylint-test: *vérification des normes de codage*  
+3. unittest-test: *test des modules individuels*  
+4. robot-test: **
+5. radon-raw-test: *analyse de la complexité cyclomatique*
+6. radon-cc-test *vérification des copier/coller dans le code*
 
 Lors de l'exécution des jobs de chaque actions une visualisation succinte et détaillé est disponible dans Github Actions.  
 
 Lorsque les tests sont validés, l'image docker est construite et pousser sur le docker hub.  
+
++IMAGE A INSERER ICI
 
 
 
