@@ -21,7 +21,7 @@ Le pipeline de ce TP permet de lancer une suite de tâches de manières automati
 1. repot-clone: *récupération du code source dans un dépôt git*
 2. pylint-test: *vérification des normes de codage*  
 3. unittest-test: *test des modules individuels*  
-4. robot-test: **
+4. robot-test: *automatisation de test*
 5. radon-raw-test: *analyse de la complexité cyclomatique*
 6. radon-cc-test *vérification des copier/coller dans le code*
 
@@ -30,8 +30,6 @@ Lors de l'exécution des jobs de chaque actions une visualisation succinte et d�
 Lorsque les tests sont validés, l'image docker est construite et pousser sur le docker hub.  
 
 ![CI](https://github.com/AZARZARSoukaina/TP3_CI/assets/105217130/6b15bc63-76e5-49a4-8562-f528d3696408)
-
-
 
 ### Configuration des paramètres du pipeline
 
