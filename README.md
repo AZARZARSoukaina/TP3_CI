@@ -29,8 +29,7 @@ Lors de l'exécution des jobs de chaque actions une visualisation succinte et d�
 
 Lorsque les tests sont validés, l'image docker est construite et pousser sur le docker hub.  
 
-![alt text](https://github.com/[AZARZARSoukaina]/[TP3_CI]/blob/[main]/CI.png?raw=true)
-
+![CI](https://github.com/AZARZARSoukaina/TP3_CI/assets/105217130/6b15bc63-76e5-49a4-8562-f528d3696408)
 
 
 
