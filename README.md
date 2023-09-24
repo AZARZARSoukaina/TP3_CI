@@ -29,7 +29,7 @@ Lors de l'exécution des jobs de chaque actions une visualisation succinte et d�
 
 Lorsque les tests sont validés, l'image docker est construite et pousser sur le docker hub.  
 
-+IMAGE A INSERER ICI
++CI.PNG
 
 
 
