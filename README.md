@@ -58,4 +58,4 @@ Faites de même pour la variable `DOCKER_USER` à laquelle vous lui associez le 
 
 Une fois votre code pousser dans le répertoire github, aller dans l'onglet **Actions** et attendre la fin du déploiement (jusqu'à ce que tous les voyants soient verts)
 
-
+![tp3pic](https://github.com/AZARZARSoukaina/TP3_CI/assets/105217130/07526a54-b541-4441-8151-508f3e9622ac)
