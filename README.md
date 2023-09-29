@@ -34,8 +34,8 @@ Lorsque les tests sont validés, l'image docker est construite et pousser sur le
 ### Configuration des paramètres du pipeline
 1. Créer un nouveau répertoire sur Github dans lequel cloner ce répertoire
 qui contient un fichier de pipeline permettant de récupérer le code source
-d'une petite application python
-$ https://github.com/AZARZARSoukaina/TP3_CI.git
+d'une petite application python  
+`https://github.com/AZARZARSoukaina/TP3_CI.git`
 
 3. Créer un nouveau répertoire dans le Hubdocker puis créer un token 
 en allant dans ***"Account settings"*** puis ***"Security"*** puis ***"New acces token"*** 
