@@ -56,6 +56,6 @@ Faites de même pour la variable `DOCKER_USER` à laquelle vous lui associez le 
 `DOCKER_IMAGE_VERSION`: version de l'iamge de l'application (à vous de la définir)  
 `UNITTEST_FILE`: chemin du fichier unittest soit test/unit/test.py 
 
-Une fois votre code pousser dans le répertoire github, aller dans l'onglet **Actions** et attendre la fin du déploiement (jusqu'à ce que tout les voyant soient verts)
+Une fois votre code pousser dans le répertoire github, aller dans l'onglet **Actions** et attendre la fin du déploiement (jusqu'à ce que tous les voyants soient verts)
 
 
