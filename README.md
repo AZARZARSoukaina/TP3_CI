@@ -48,11 +48,12 @@ Faites de même pour la variable `DOCKER_USER` à laquelle vous lui associez le 
 
 - Dans l'onglet **Variables** cliquez sur ***"New repository variable"*** et déclarer les variables suivantes en leur associant respectivement leurs valeurs:   
 
-`DOCKER_REPO` : nom du repot créer sur le hub docker
-`IMAGE_FILE` : chemin du dockerfile de l'app soit docker-app/python/Dockerfile
-`IMAGE_OS` : ubuntu-latest
-`ROBOT_FILE_NAME`: nom du fichier robotframework soit machine.robot
-`ROBOT_FILE_WAY`: chemin du fichier robotframework soit ./app/test/system
-`DOCKER_IMAGE_VERSION`: version de l'iamge de l'application (à vous de la définir)
-`UNITTEST_FILE`: chemin du fichier unittest soit test/unit/test.py
+`DOCKER_REPO` : nom du repot créer sur le hub docker  
+`IMAGE_FILE` : chemin du dockerfile de l'app soit docker-app/python/Dockerfile  
+`IMAGE_OS` : ubuntu-latest  
+`ROBOT_FILE_NAME`: nom du fichier robotframework soit machine.robot  
+`ROBOT_FILE_WAY`: chemin du fichier robotframework soit ./app/test/system  
+`DOCKER_IMAGE_VERSION`: version de l'iamge de l'application (à vous de la définir)  
+`UNITTEST_FILE`: chemin du fichier unittest soit test/unit/test.py  
+
 
