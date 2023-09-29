@@ -54,6 +54,8 @@ Faites de même pour la variable `DOCKER_USER` à laquelle vous lui associez le 
 `ROBOT_FILE_NAME`: nom du fichier robotframework soit machine.robot  
 `ROBOT_FILE_WAY`: chemin du fichier robotframework soit ./app/test/system  
 `DOCKER_IMAGE_VERSION`: version de l'iamge de l'application (à vous de la définir)  
-`UNITTEST_FILE`: chemin du fichier unittest soit test/unit/test.py  
+`UNITTEST_FILE`: chemin du fichier unittest soit test/unit/test.py 
+
+Une fois votre code pousser dans le répertoire github, aller dans l'onglet **Actions** et attendre la fin du déploiement (jusqu'à ce que tout les voyant soient verts)
 
 
