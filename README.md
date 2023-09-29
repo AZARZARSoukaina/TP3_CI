@@ -41,9 +41,9 @@ d'une petite application python
 en allant dans ***"Account settings"*** puis ***"Security"*** puis ***"New acces token"***   
 -> Copier/coller le token quelque part, vous en aurez besoin prochainement   
 
-4. Dans le répertoire Github déclarer les variables en allant dans ***"settings"*** ***"security"*** puis ***"secrets and variables"***
+4. Dans le répertoire Github déclarer les variables en allant dans ***"settings"*** puis ***"security"*** puis ***"secrets and variables"***
    
-- Dans l'onglet **Secrets**, cliquer sur ***"New repository secret"*** nommer la première variable secrètes `"DOCKER_TOKEN"` et associez lui le token crée à l'étape précédente   
+- Dans l'onglet **Secrets**, cliquer sur ***"New repository secret"*** nommer la première variable secrète `"DOCKER_TOKEN"` et associez lui le token crée à l'étape précédente   
 Faites de même pour la variable `DOCKER_USER` à laquelle vous lui associez le nom de votre pseudo dans le hubdocker     
 
 - Dans l'onglet **Variables** cliquez sur ***"New repository variable"*** et déclarer les variables suivantes en leur associant respectivement leurs valeurs:   
