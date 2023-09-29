@@ -37,29 +37,22 @@ qui contient un fichier de pipeline permettant de récupérer le code source
 d'une petite application python  
 `https://github.com/AZARZARSoukaina/TP3_CI.git`
 
-3. Créer un nouveau répertoire dans le Hubdocker puis créer un token 
-en allant dans ***"Account settings"*** puis ***"Security"*** puis ***"New acces token"*** 
-copier/coller le token quelque part, vous en aurez besoin prochainement. 
+3. Créer un nouveau répertoire dans le Hubdocker puis créer un token   
+en allant dans ***"Account settings"*** puis ***"Security"*** puis ***"New acces token"***   
+-> Copier/coller le token quelque part, vous en aurez besoin prochainement   
 
-4. Dans le répertoire Github déclarer les variables en allant dans "paramètres"
-"securité" puis "secrets and variables". 
-Dans l'onglet Secrets, cliquer sur "New repository secret" nommer la 
-première variable secrètes "DOCKER_TOKEN" et associez lui le token crée à
-l'étape précédente. 
+4. Dans le répertoire Github déclarer les variables en allant dans ***"settings"*** ***"security"*** puis ***"secrets and variables"***
+   
+- Dans l'onglet **Secrets**, cliquer sur ***"New repository secret"*** nommer la première variable secrètes `"DOCKER_TOKEN"` et associez lui le token crée à l'étape précédente   
+Faites de même pour la variable `DOCKER_USER` à laquelle vous lui associez le nom de votre pseudo dans le hubdocker     
 
-Faites de même pour la variable DOCKER_USER à laquelle vous lui associez 
-le nom de votre pseudo dans le hubdocker. 
+- Dans l'onglet **Variables** cliquez sur ***"New repository variable"*** et déclarer les variables suivantes en leur associant respectivement leurs valeurs:   
 
-Dans l'onglet variable cliquez sur "New repository variable" 
-et déclarer les variables suivantes en leur associant respectivement
-leurs valeurs : 
-
-DOCKER_REPO : nom du repot créer sur le hub docker
-IMAGE_FILE : chemin du dockerfile de l'app soit docker-app/python/Dockerfile
-IMAGE_OS : ubuntu-latest
-ROBOT_FILE_NAME: nom du fichier robotframework machine.robot
-
-ROBOT_FILE_WAY: chemin du fichier robotframework soit ./app/test/system
-DOCKER_IMAGE_VERSION: version de l'iamge de l'application (à vous de la définir)
-UNITTEST_FILE: chemin du fichier unittest soit test/unit/test.py
+`DOCKER_REPO` : nom du repot créer sur le hub docker
+`IMAGE_FILE` : chemin du dockerfile de l'app soit docker-app/python/Dockerfile
+`IMAGE_OS` : ubuntu-latest
+`ROBOT_FILE_NAME`: nom du fichier robotframework soit machine.robot
+`ROBOT_FILE_WAY`: chemin du fichier robotframework soit ./app/test/system
+`DOCKER_IMAGE_VERSION`: version de l'iamge de l'application (à vous de la définir)
+`UNITTEST_FILE`: chemin du fichier unittest soit test/unit/test.py
 
